@@ -1,0 +1,97 @@
+/*-----------------------------------------------------------------------------------
+* GENERAL STYLES
+*------------------------------------------------------------------------------------*/
+h1,h2,h3,h4,h5
+{
+	color:#eeeeee;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-weight:400;
+}
+/*-----------------------------------------------------------------------------------
+* HEADER
+*------------------------------------------------------------------------------------*/
+#header
+{
+	height:50px;
+	margin-bottom:20px;
+}
+#header a.logo
+{
+	line-height:50px;
+	display:block;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-size:14px;
+	color:#4f4f4f;
+}
+.dashboard-container
+{
+	width:100%;
+	display: inline-flex;
+	border-top:1px solid #343a46;
+}
+.dashboard-details
+{
+	width:30%;
+	border-right:1px solid #343a46;
+}
+.d-status
+{
+	height:130px;
+	padding:20px;
+	text-align:center;
+	
+}
+.d-status h1
+{
+
+	font-size:48px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-weight:300;
+}
+.dashboard-stastics
+{
+	width:70%;
+	padding:  15px;
+}
+table.tbl_result
+{
+	margin:0px;
+}
+table.tbl_result tr td
+{
+	padding:12px 8px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+}
+table.tbl_result tr td:first-child
+{
+	padding-left:15px;
+}
+table.tbl_result tr td .progress
+{
+	margin-top:6px;
+}
+.panel-default > .panel-heading
+{
+	letter-spacing:1px;
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:600;
+}
+
+.progress-bar-grey
+{
+	background-color: #656565;
+}
+
+.text-ignored
+{
+ color:#656565
+}
+tspan{
+    text-decoration:none;
+    text-shadow:none !important;
+}

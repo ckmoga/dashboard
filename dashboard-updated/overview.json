@@ -1,0 +1,38 @@
+{
+    "1": {
+        "type": "tennis",
+        "total": "63",
+        "passed": "40",
+        "failed": "5",
+        "pending": "10",
+        "ignored": "5",
+        "untested": "3"
+    },
+    "2": {
+        "type": "cricket",
+        "total": "33",
+        "passed": "23",
+        "failed": "1",
+        "pending": "6",
+        "ignored": "3",
+        "untested": "0"
+    },
+    "3": {
+        "type": "football",
+        "total": "63",
+        "passed": "50",
+        "failed": "5",
+        "pending": "2",
+        "ignored": "6",
+        "untested": "7"
+    },
+    "4": {
+        "type": "basketball",
+        "total": "55",
+        "passed": "15",
+        "failed": "15",
+        "pending": "10",
+        "ignored": "5",
+        "untested": "10"
+    }
+}

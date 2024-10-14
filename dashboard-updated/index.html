@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dashboard</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/highcharts.js"></script>
+</head>
+
+
+
+
+<body>
+<!-- HEADER -->
+<div id="header">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+            	<a href="#" class="logo">Dashboard</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BODY -->
+<div class="container">
+	<div class="row">
+    	<div class="col-md-12">
+        	<div class="panel panel-default">
+              	<div class="panel-heading">Functional</div>
+                  <div class="panel-body">
+                	<div class="dashboard-container ">
+                    	<div class="dashboard-details ">
+                        <div class="d-status ">
+                         <h1 id="status-functional"></h1>
+                         <h5 id="lastrun-functional"></h5>
+                        </div>
+                        
+                        <table class="table tbl_result">
+                        	<tr>
+                        		<td width="25%"> TOTAL </td>
+                                <td width="15%" id="total-functional"></td>
+                                <td width="50%" ></td>
+                                <td width="10%"></td>
+                             </tr>
+                             <tr>
+                        		<td > PASS </td>
+                                <td id="passed-functional" ></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="passed_perc-functional" >
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="passed_perc1-functional"></td>
+                             </tr>
+                             </tr>
+                             <tr>
+                        		<td > Fail </td>
+                                <td id="failed-functional" ></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="failed_perc-functional">
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="failed_perc1-functional"></td>
+                             </tr>
+                             </tr>
+                             <tr>
+                        		<td > Pending </td>
+                                <td id="pending-functional"></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="pending_perc-functional">
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="pending_perc1-functional"></td>
+                             </tr>
+                             </tr>
+                             <tr>
+                        		<td > Ignored </td>
+                                <td id="ignored-functional"></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="ignored_perc-functional">
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="ignored_perc1-functional"> </td>
+                             </tr>
+                            
+                            
+                        </table>
+                        
+                       
+                        </div>
+                        <div class="dashboard-stastics-functional col-md-8">
+                        
+                        </div>
+                    </div>
+               	
+                  
+                 </div>
+            </div>
+
+
+
+
+          <div class="panel panel-default">
+                <div class="panel-heading">System</div>
+                  <div class="panel-body">
+                  <div class="dashboard-container ">
+                      <div class="dashboard-details ">
+                        <div class="d-status ">
+                         <h1 id="status-system"></h1>
+                         <h5 id="lastrun-system"></h5>
+                        </div>
+                        
+                        <table class="table tbl_result">
+                          <tr>
+                            <td width="25%"> TOTAL </td>
+                                <td width="15%" id="total-system"></td>
+                                <td width="50%" ></td>
+                                <td width="10%"></td>
+                             </tr>
+                             <tr>
+                            <td > PASS </td>
+                                <td id="passed-system" ></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="passed_perc-system" >
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="passed_perc1-system"></td>
+                             </tr>
+                             </tr>
+                             <tr>
+                            <td > Fail </td>
+                                <td id="failed-system" ></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="failed_perc-system">
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="failed_perc1-system"></td>
+                             </tr>
+                             </tr>
+                             <tr>
+                            <td > Pending </td>
+                                <td id="pending-system"></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="pending_perc-system">
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="pending_perc1-system"></td>
+                             </tr>
+                             </tr>
+                             <tr>
+                            <td > Ignored </td>
+                                <td id="ignored-system"></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="ignored_perc-system">
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="ignored_perc1-system"> </td>
+                             </tr>
+                            
+                            
+                        </table>
+                        
+                       
+                        </div>
+                        <div class="dashboard-stastics-system  col-md-8">
+                        
+                        </div>
+                    </div>
+                
+                  
+                 </div>
+            </div>
+
+
+
+
+          <div class="panel panel-default">
+                <div class="panel-heading">regression</div>
+                  <div class="panel-body">
+                  <div class="dashboard-container ">
+                      <div class="dashboard-details ">
+                        <div class="d-status ">
+                         <h1 id="status-regression"></h1>
+                         <h5 id="lastrun-regression"></h5>
+                        </div>
+                        
+                        <table class="table tbl_result">
+                          <tr>
+                            <td width="25%"> TOTAL </td>
+                                <td width="15%" id="total-regression"></td>
+                                <td width="50%" ></td>
+                                <td width="10%"></td>
+                             </tr>
+                             <tr>
+                            <td > PASS </td>
+                                <td id="passed-regression" ></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="passed_perc-regression" >
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="passed_perc1-regression"></td>
+                             </tr>
+                             </tr>
+                             <tr>
+                            <td > Fail </td>
+                                <td id="failed-regression" ></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="failed_perc-regression">
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="failed_perc1-regression"></td>
+                             </tr>
+                             </tr>
+                             <tr>
+                            <td > Pending </td>
+                                <td id="pending-regression"></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="pending_perc-regression">
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="pending_perc1-regression"></td>
+                             </tr>
+                             </tr>
+                             <tr>
+                            <td > Ignored </td>
+                                <td id="ignored-regression"></td>
+                                <td> <div class="progress">
+                                  <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="40"
+                                  aria-valuemin="0" aria-valuemax="100" id="ignored_perc-regression">
+                                    
+                                  </div>
+                                </div>
+                                </td>
+                                <td id="ignored_perc1-regression"> </td>
+                             </tr>
+                            
+                            
+                        </table>
+                        
+                       
+                        </div>
+                        <div class="dashboard-stastics-regression  col-md-8">
+                        
+                        </div>
+                    </div>
+                
+                  
+                 </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+            <h3>Requirement Overview </h3>
+            <table class="table">
+            	<thead>
+                	<tr>
+                        <th width="52%"> Requirments Type</th> 
+                        <th width="8%"> Total </th>
+                        <th width="8%"> Pass</th>
+                        <th width="8%"> Fail </th>
+                        <th width="8%">Pending </th>
+                        <th width="8%"> Ignored</th>
+                        <th width="8%"> Untested</th>
+                    </tr>
+                </thead>
+                <tbody class="overview-data">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
